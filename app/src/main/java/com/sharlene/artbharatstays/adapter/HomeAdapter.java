@@ -1,5 +1,8 @@
 package com.sharlene.artbharatstays.adapter;
 
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -7,16 +10,21 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.sharlene.artbharatstays.R;
+import com.sharlene.artbharatstays.RoomSelectionActivity;
+import com.sharlene.artbharatstays.data.HomeData;
 
 import java.util.List;
 
 public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeViewHolder> {
-    private List<String> data;
-    public HomeAdapter(List<String> list){
+    private List<HomeData> data;
+    Context context;
+    public HomeAdapter(List<HomeData> list,Context context){
         this.data=list;
+        this.context=context;
     }
     @NonNull
     @Override
@@ -28,22 +36,35 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull HomeViewHolder holder, int position) {
-        holder.text.setText(data.get(position));
+        HomeData hdata = data.get(position);
+        holder.text.setText(hdata.getName());
+
+        holder.image.setImageDrawable(context.getResources().getDrawable(hdata.imageId));
     }
 
     @Override
     public int getItemCount() {
-        return data.size();
+        return data == null? 0:data.size();
+//
     }
 
     public class HomeViewHolder extends RecyclerView.ViewHolder{
         TextView text;
         ImageView image;
+        CardView cardView;
 
         public HomeViewHolder(@NonNull View itemView) {
             super(itemView);
             text=itemView.findViewById(R.id.city);
             image=itemView.findViewById(R.id.city_image);
+            cardView=itemView.findViewById(R.id.destination_card);
+            cardView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(view.getContext(),RoomSelectionActivity.class);
+                    view.getContext().startActivity(intent);
+                }
+            });
         }
     }
 }

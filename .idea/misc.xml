@@ -3,16 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidWork/ARTBharatstays/app/src/main/res/drawable/circle.xml" value="0.1" />
         <entry key="..\:/AndroidWork/ARTBharatstays/app/src/main/res/drawable/ic_arrow_up.xml" value="0.1405" />
         <entry key="..\:/AndroidWork/ARTBharatstays/app/src/main/res/drawable/ic_date.xml" value="0.1" />
         <entry key="..\:/AndroidWork/ARTBharatstays/app/src/main/res/drawable/ic_hangout.xml" value="0.1295" />
         <entry key="..\:/AndroidWork/ARTBharatstays/app/src/main/res/drawable/ic_lamp.xml" value="0.1295" />
         <entry key="..\:/AndroidWork/ARTBharatstays/app/src/main/res/layout-v26/room_card.xml" value="0.184375" />
-        <entry key="..\:/AndroidWork/ARTBharatstays/app/src/main/res/layout/activity_homepage.xml" value="0.18142857142857144" />
+        <entry key="..\:/AndroidWork/ARTBharatstays/app/src/main/res/layout/activity_homepage.xml" value="0.16075949367088607" />
         <entry key="..\:/AndroidWork/ARTBharatstays/app/src/main/res/layout/activity_rooms.xml" value="0.16666666666666666" />
         <entry key="..\:/AndroidWork/ARTBharatstays/app/src/main/res/layout/city_card_list.xml" value="0.184375" />
+        <entry key="..\:/AndroidWork/ARTBharatstays/app/src/main/res/layout/hygiene_shopping_activity.xml" value="0.14666666666666667" />
         <entry key="..\:/AndroidWork/ARTBharatstays/app/src/main/res/layout/review_card.xml" value="0.3333333333333333" />
         <entry key="..\:/AndroidWork/ARTBharatstays/app/src/main/res/layout/room_card.xml" value="0.16666666666666666" />
+        <entry key="..\:/AndroidWork/ARTBharatstays/app/src/main/res/layout/sub_list_card.xml" value="0.1" />
       </map>
     </option>
   </component>
