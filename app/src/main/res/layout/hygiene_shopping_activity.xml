@@ -30,15 +30,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/hillview"/>
+                android:src="@drawable/bralettebra"/>
         </androidx.cardview.widget.CardView>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="max"
+            android:text="Bra"
             android:textAlignment="center"
             app:layout_constraintTop_toBottomOf="@id/picture"
-            android:textSize="30sp"
+            android:textSize="23sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@id/picture"
             app:layout_constraintStart_toStartOf="@id/picture"
@@ -60,15 +60,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/hillview"/>
+                    android:src="@drawable/nightdress"/>
             </androidx.cardview.widget.CardView>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="max"
+                android:text="Nightwears"
                 android:textAlignment="center"
                 app:layout_constraintTop_toBottomOf="@id/picture"
-                android:textSize="30sp"
+                android:textSize="23sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@id/picture"
                 app:layout_constraintStart_toStartOf="@id/picture"
@@ -90,15 +90,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/hillview"/>
+                    android:src="@drawable/trackpants"/>
             </androidx.cardview.widget.CardView>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="max"
+                android:text="Activewear"
                 android:textAlignment="center"
                 app:layout_constraintTop_toBottomOf="@id/picture"
-                android:textSize="30sp"
+                android:textSize="23sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@id/picture"
                 app:layout_constraintStart_toStartOf="@id/picture"
@@ -120,15 +120,75 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/hillview"/>
+                    android:src="@drawable/hipster"/>
             </androidx.cardview.widget.CardView>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="max"
+                android:text="Panties"
                 android:textAlignment="center"
                 app:layout_constraintTop_toBottomOf="@id/picture"
-                android:textSize="30sp"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/picture"
+                app:layout_constraintStart_toStartOf="@id/picture"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/picture5"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="100dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/petticoat"/>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shapewear"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@id/picture"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/picture"
+                app:layout_constraintStart_toStartOf="@id/picture"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/picture6"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="100dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/swimsuit"/>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Swim and \n Beach"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@id/picture"
+                android:textSize="23sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@id/picture"
                 app:layout_constraintStart_toStartOf="@id/picture"
@@ -149,11 +209,10 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/shopping_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="550dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         app:layout_constraintTop_toBottomOf="@id/sub_card_recycler"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

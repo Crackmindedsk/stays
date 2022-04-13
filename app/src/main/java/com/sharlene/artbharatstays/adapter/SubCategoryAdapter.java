@@ -1,5 +1,6 @@
 package com.sharlene.artbharatstays.adapter;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,13 +14,16 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.sharlene.artbharatstays.HygeineShoppingActivity;
 import com.sharlene.artbharatstays.R;
+import com.sharlene.artbharatstays.data.HomeData;
 
 import java.util.List;
 
 public class SubCategoryAdapter extends RecyclerView.Adapter<SubCategoryAdapter.SubCategoryViewHolder>{
-    private List<String> data;
-    public SubCategoryAdapter(List<String> list){
+    private List<HomeData> data;
+    Context context;
+    public SubCategoryAdapter(List<HomeData> list, Context context){
         this.data=list;
+        this.context=context;
     }
     @NonNull
     @Override
@@ -31,7 +35,9 @@ public class SubCategoryAdapter extends RecyclerView.Adapter<SubCategoryAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull SubCategoryAdapter.SubCategoryViewHolder holder, int position) {
-        holder.text.setText(data.get(position));
+        HomeData homeData = data.get(position);
+        holder.text.setText(homeData.getName());
+        holder.image.setImageDrawable(context.getResources().getDrawable(homeData.imageId));
     }
 
     @Override
